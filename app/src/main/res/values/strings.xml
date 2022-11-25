@@ -1,0 +1,53 @@
+<resources>
+        <string name="app_name">JWFY27ZW2</string>
+
+        <string name="databaseName">AYIGConnect</string>
+        <string name="databaseTable">Users</string>
+        <string name="ID">id</string>
+        <string name="email">email</string>
+        <string name="password">password</string>
+        <string name="hintConfirm">confirm password</string>
+
+        <string name="appTitle">Youth Connect</string>
+        <string name="hintUser">username</string>
+        <string name="hintName">Name</string>
+        <string name="hintSurname">Surname</string>
+        <string name="hintEmail">Email Address</string>
+        <string name="hintPhone">Phone Number</string>
+        <string name="hintPassword">password</string>
+
+        <string name="txtOR">OR</string>
+
+        <string name="btnReg">Register</string>
+        <string name="btnAffiliate">Affiliate</string>
+        <string name="btnAdmin">Admin</string>
+        <string name="btnAllData">All Data</string>
+        <string name="btnLogin">Log in</string>
+        <string name="btnLogout">Log out</string>
+
+
+        <string name="btnViewEvents">View Events and Activities</string>
+        <string name="btnViewUsers">Manage Users</string>
+        <string name="btnUpdateLogin">Update Login details</string>
+
+        <string name="btnUpdateEvents">Manage Events and Activities</string>
+        <string name="title_activity_events">EventsActivity</string>
+        <!-- Strings used for fragments for navigation -->
+        <string name="first_fragment_label">First Fragment</string>
+        <string name="second_fragment_label">Second Fragment</string>
+        <string name="next">Next</string>
+        <string name="previous">Previous</string>
+
+        <string name="Admin_Menu">Administrator Menu</string>
+        <string name="Affiliate_Menu">Affiliate Menu</string>
+
+
+        <string name="hello_first_fragment">Hello first fragment</string>
+        <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+        <!-- TODO: Remove or change this placeholder text -->
+    <string name="success">thank you for registering, you can now login as an Affiliate</string>
+        <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
