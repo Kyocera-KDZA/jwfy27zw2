@@ -15,6 +15,9 @@
         <string name="hintEmail">Email Address</string>
         <string name="hintPhone">Phone Number</string>
         <string name="hintPassword">password</string>
+        <string name="hintNewPassword">new password</string>
+        <string name="hintOldPassword">old password</string>
+
 
         <string name="txtOR">OR</string>
 
@@ -24,6 +27,8 @@
         <string name="btnAllData">All Data</string>
         <string name="btnLogin">Log in</string>
         <string name="btnLogout">Log out</string>
+        <string name="btnUpdate">Update details</string>
+
 
 
         <string name="btnViewEvents">View Events and Activities</string>
@@ -32,6 +37,7 @@
 
         <string name="btnUpdateEvents">Manage Events and Activities</string>
         <string name="title_activity_events">EventsActivity</string>
+
         <!-- Strings used for fragments for navigation -->
         <string name="first_fragment_label">First Fragment</string>
         <string name="second_fragment_label">Second Fragment</string>

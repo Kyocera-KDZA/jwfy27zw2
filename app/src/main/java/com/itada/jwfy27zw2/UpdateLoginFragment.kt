@@ -9,22 +9,21 @@ import android.widget.Button
 import androidx.navigation.findNavController
 
 
-class SuccessFragment : Fragment() {
-
+class UpdateLoginFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_success,container, false)
+        val view = inflater.inflate(R.layout.fragment_update_login,container, false)
 
-        val loginBtn = view.findViewById<Button>(R.id.btn_Reg_Login)
+        val updateBtn = view.findViewById<Button>(R.id.btn_update)
 
-        loginBtn.setOnClickListener {
-            it.findNavController().navigate(R.id.action_successFragment_to_affiliateFragment)
+        updateBtn.setOnClickListener {
+            it.findNavController().navigate(R.id.action_updateLoginFragment_to_loginFragment)
         }
 
-        return view
-    }
+        return view    }
+
 }

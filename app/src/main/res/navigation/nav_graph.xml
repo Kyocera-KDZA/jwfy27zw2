@@ -13,10 +13,81 @@
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminFragment"
+            app:destination="@id/adminFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.itada.jwfy27zw2.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.itada.jwfy27zw2.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" >
+        <argument
+            android:name="user"
+            app:argType="string"
+            android:defaultValue="Admin" />
+        <action
+            android:id="@+id/action_successFragment_to_affiliateFragment"
+            app:destination="@id/affiliateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.itada.jwfy27zw2.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" >
+        <action
+            android:id="@+id/action_adminFragment_to_eventFragment"
+            app:destination="@id/eventFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_manageEventsFragment"
+            app:destination="@id/manageEventsFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_manageUsersFragment"
+            app:destination="@id/manageUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="com.itada.jwfy27zw2.EventFragment"
+        android:label="fragment_event"
+        tools:layout="@layout/fragment_event" />
+    <fragment
+        android:id="@+id/affiliateFragment"
+        android:name="com.itada.jwfy27zw2.AffiliateFragment"
+        android:label="fragment_affiliate"
+        tools:layout="@layout/fragment_affiliate" >
+        <action
+            android:id="@+id/action_affiliateFragment_to_eventFragment"
+            app:destination="@id/eventFragment" />
+        <action
+            android:id="@+id/action_affiliateFragment_to_updateLoginFragment"
+            app:destination="@id/updateLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageEventsFragment"
+        android:name="com.itada.jwfy27zw2.ManageEventsFragment"
+        android:label="fragment_manage_events"
+        tools:layout="@layout/fragment_manage_events" />
+    <fragment
+        android:id="@+id/manageUsersFragment"
+        android:name="com.itada.jwfy27zw2.ManageUsersFragment"
+        android:label="fragment_manage_users"
+        tools:layout="@layout/fragment_manage_users" />
+    <fragment
+        android:id="@+id/updateLoginFragment"
+        android:name="com.itada.jwfy27zw2.UpdateLoginFragment"
+        android:label="fragment_update_login"
+        tools:layout="@layout/fragment_update_login" >
+        <action
+            android:id="@+id/action_updateLoginFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
