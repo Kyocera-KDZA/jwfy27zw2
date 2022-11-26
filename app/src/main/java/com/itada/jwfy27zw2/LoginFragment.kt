@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.navigation.findNavController
 
 
@@ -17,7 +19,6 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-
         val view = inflater.inflate(R.layout.fragment_login,container, false)
 
         val regBtn = view.findViewById<Button>(R.id.btn_register)
@@ -28,12 +29,20 @@ class LoginFragment : Fragment() {
         }
 
         loginBtn.setOnClickListener {
-            it.findNavController().navigate(R.id.action_loginFragment_to_adminFragment)
-        }
+            val user = view.findViewById<EditText>(R.id.name).text.toString()
+            val pass = view.findViewById<EditText>(R.id.password).text.toString()
 
+            if(user != "" || pass != "") {
+                Toast.makeText(view.context, "Logging in...", Toast.LENGTH_SHORT).show()
+
+                it.findNavController().navigate(R.id.action_loginFragment_to_adminFragment)
+            }
+            else
+            {
+                Toast.makeText(view.context, "User not found", Toast.LENGTH_LONG).show()
+            }
+        }
         return view
     }
-
-
 
 }
